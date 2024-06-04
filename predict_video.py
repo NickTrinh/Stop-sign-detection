@@ -5,7 +5,7 @@ import cv2
 VIDEOS_DIR = os.path.join('.', 'videos') # get test video path
 
 video_path = os.path.join(VIDEOS_DIR, 'stop_sign_1.mp4')
-video_path_out = 'out_{}'.format(video_path) # output video
+video_path_out = '{}_out.mp4'.format(os.path.splitext(video_path)[0]) # output video
 
 cap = cv2.VideoCapture(video_path) # in video
 ret, frame = cap.read()
@@ -16,7 +16,7 @@ model_path = os.path.join('.', 'runs', 'detect', 'train16', 'weights', 'best.pt'
 
 model = YOLO(model_path)  # load the model
 
-threshold = 0.8 # set threshold for conf score
+threshold = 0.5 # set threshold for conf score
 
 while ret:
 
