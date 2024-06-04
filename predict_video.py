@@ -5,7 +5,7 @@ import cv2
 VIDEOS_DIR = os.path.join('.', 'videos') # get test video path
 
 video_path = os.path.join(VIDEOS_DIR, 'stop_sign_1.mp4')
-video_path_out = '{}_out.mp4'.format(video_path) # output video
+video_path_out = 'out_{}'.format(video_path) # output video
 
 cap = cv2.VideoCapture(video_path) # in video
 ret, frame = cap.read()
