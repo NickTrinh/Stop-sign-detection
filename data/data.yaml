@@ -1,0 +1,13 @@
+train: D:/projects/Stop-sign-detection/data/train/images
+val: D:/projects/Stop-sign-detection/data/valid/images
+test: D:/projects/Stop-sign-detection/data/test/images
+
+nc: 1
+names: ["Stop-sign"]
+
+roboflow:
+  workspace: personal-projects-yqrsc
+  project: stop-sign-detection-lkz2a
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/personal-projects-yqrsc/stop-sign-detection-lkz2a/dataset/1
